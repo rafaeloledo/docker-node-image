@@ -14,7 +14,7 @@ app.use(
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.send("Hello");
+  res.send(userGoal);
 });
 
 app.listen(3000, _ => {
